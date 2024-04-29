@@ -78,6 +78,61 @@
     }
   }
 }
+.secondary-container {
+  position: relative;
+  min-height: 50%;
+  padding: 20px;
+  left: 40%;
+  display: flex;
+  top: 16%;
+  flex-direction: column;
+  justify-content: center;
+  .profile-container {
+    width: 61%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 30%;
+      height: 30%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+    }
+  }
+  .profile-details {
+    display: flex;
+    width: 61%;
+    justify-content: center;
+    font-family: "Coolvetica";
+    .colz {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ffd700;
+      opacity: 0.9;
+      padding: 9px;
+      color: white;
+      border: 2px #022c43 solid;
+      span {
+        font-size: 45px;
+        color: white;
+        display: inline-block;
+        height: 45px;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+    .first-col {
+      border-top-left-radius: 10%;
+      border-bottom-left-radius: 10%;
+    }
+    .third-col {
+      border-top-right-radius: 10%;
+      border-bottom-right-radius: 10%;
+    }
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .tags,
@@ -85,13 +140,27 @@
   .home-page h1:after {
     display: none;
   }
-
+  .home-page h1 {
+    color: #fff;
+    font-size: 56px;
+    line-height: 36px;
+    margin: 0;
+    font-family: "Coolvetica";
+    font-weight: 400;
+  }
   .home-page .text-zone {
     position: initial;
     width: 100%;
     transform: none;
     padding: 10px;
     box-sizing: border-box;
+    .intro-text {
+      font-size: 30px;
+      .img-fluid {
+        width: 25px;
+        height: 30px;
+      }
+    }
   }
 
   .home-page .flat-button {
@@ -99,25 +168,23 @@
     display: block;
     margin: 20px auto 0 auto;
     width: 124px;
+    position: relative;
+    left: -4%;
   }
 
-  .logo-container {
+  .secondary-container {
     position: relative;
-    width: 100px;
     height: auto;
     top: 50px;
     right: 0;
     box-sizing: border-box;
     margin: auto;
     left: 0;
-  }
-
-  .logo-container svg {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
+    .profile-container {
+      width: 100%;
+    }
+    .profile-details {
+      width: 100%;
+    }
   }
 }
