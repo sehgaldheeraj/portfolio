@@ -6,7 +6,7 @@ import qkart from "../../assets/images/portfolioImages/qkart.png";
 import qtify from "../../assets/images/portfolioImages/qtify.png";
 import qflix from "../../assets/images/portfolioImages/qflix.png";
 import taxCalculator from "../../assets/images/portfolioImages/TaxCalculor.png";
-import userMgmt from "../../assets/images/portfolioImages/UserMgmt.png";
+import weatherApp from "../../assets/images/portfolioImages/WeatherApp.png";
 import Loader from "react-loaders";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -211,14 +211,14 @@ const Portfolio = () => {
             </div>
             <div className="image-box">
               <img
-                src={userMgmt}
+                src={weatherApp}
                 className="portfolio-image"
                 alt="portfolio mgmt"
               />
               <div className="content">
-                <p className="title">User Manager</p>
+                <p className="title">Weather App</p>
                 <a
-                  href="https://user-mgmt-dashboard.vercel.app"
+                  href="https://weather-app-one-gamma-95.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
@@ -230,7 +230,7 @@ const Portfolio = () => {
                   />
                 </a>
                 <a
-                  href="https://github.com/sehgaldheeraj/user-mgmt-dashboard"
+                  href="https://github.com/sehgaldheeraj/weather-app"
                   target="_blank"
                   rel="noreferrer"
                   className="btn"
